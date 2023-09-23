@@ -17,8 +17,8 @@ Thanks for checking out my front-end coding portfolio.
 
 ### Links
 
-- GitHub Page: [=>link](https://robsongeek.github.io/portfole-tamplate/)
-- Repository GitHub: [=>link](https://github.com/robsongeek/portfole-tamplate)
+- GitHub Page: [=>link](https://robsongeek.github.io/portfolio-curriculo/)
+- Repository GitHub: [=>link](https://github.com/robsongeek/portfolio-curriculo)
 
 ### Built with
 
