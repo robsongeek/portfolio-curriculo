@@ -1,0 +1,333 @@
+/* Responsividade para desktop*/
+@media (max-width: 1089px) {
+}
+
+/* Responsividade para desktop e tablet*/
+@media (max-width: 992px) {
+  header {
+    justify-content: space-between;
+    padding: 30px 70px;
+  }
+
+  header h1 {
+    max-width: 100px;
+  }
+
+  header .primary_navigation {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .primary_navigation.activated {
+    display: grid;
+    gap: 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(61, 66, 101, 1) 25%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    position: absolute;
+    padding: 20px;
+    border-radius: 4px;
+    color: var(--text-color-3);
+    animation: aboutSection 0.8s ease-in-out forwards;
+    top: 120px;
+    right: 20px;
+    /* importente para o funcionamento para não ficar escondido */
+    z-index: 1;
+  }
+
+  header i {
+    color: var(--text-color-4th);
+    font-size: 5.5rem;
+  }
+
+  /* RESUMO PROFICIONAL */
+  .professional_resume {
+    gap: 0px;
+    padding: 30px;
+    grid-template-columns: none;
+    background-image: url(../images/foto-celular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .professional_resume img {
+    display: none;
+  }
+
+  .professional_resume .typing {
+    height: 130px;
+  }
+
+  .professional_resume div h2 {
+    font-size: 2.5rem;
+    color: var(--text-color-primary);
+  }
+
+  .professional_resume div p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    margin-top: 20px;
+    /* text-align: justify; */
+  }
+
+  .professional_resume div a {
+    border: 2px solid var(--background-color-primary);
+    color: var(--text-color-primary);
+    font-weight: 700;
+  }
+
+  /* SEÇÃO PRINCIPAL SOBRE MIM */
+  main .about img {
+    display: none;
+  }
+
+  main .about .about_container {
+    grid-column: 1/-1;
+  }
+
+  main .about .about_container .about_text p {
+    text-align: center;
+  }
+
+  .services .about_title {
+    margin: 0;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .services .my_services {
+    padding: 40px 5px;
+  }
+
+  .services .my_services ul li {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  
+  /* CURSOS E SKILLS */
+.courses {
+  grid-template-columns: 1fr;
+}
+
+.courses .funfacs {
+  justify-content: center;
+}
+
+.courses .funfacs {
+  margin-bottom: 20px;
+  text-align: center;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  grid-column: 1/-1;
+}
+
+.courses .funfacs ul{
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses .my_skill {
+ justify-content: center;
+}
+
+}
+
+/* Responsividade para mobile*/
+@media (max-width: 500px) {
+  header {
+    justify-content: space-between;
+    padding: 30px 70px;
+  }
+
+  header h1 {
+    max-width: 100px;
+  }
+
+  header .primary_navigation {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .primary_navigation.activated {
+    display: grid;
+    gap: 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(61, 66, 101, 1) 25%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    position: absolute;
+    padding: 20px;
+    border-radius: 4px;
+    color: var(--text-color-3);
+    animation: aboutSection 0.8s ease-in-out forwards;
+    top: 120px;
+    right: 20px;
+    /* importente para o funcionamento para não ficar escondido */
+    z-index: 1;
+  }
+
+  header i {
+    color: var(--text-color-4th);
+    font-size: 4.5rem;
+  }
+
+  /* RESUMO PROFICIONAL */
+  .professional_resume {
+    gap: 0px;
+    padding: 30px;
+    grid-template-columns: none;
+    background-image: url(../images/foto-celular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .professional_resume img {
+    display: none;
+  }
+
+  .professional_resume .typing {
+    height: 130px;
+  }
+
+  .professional_resume div h2 {
+    font-size: 2.5rem;
+    color: var(--text-color-primary);
+  }
+
+  .professional_resume div p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    margin-top: 20px;
+    /* text-align: justify; */
+  }
+
+  .professional_resume div a {
+    border: 2px solid var(--background-color-primary);
+    color: var(--text-color-primary);
+    font-weight: 700;
+  }
+
+  /* SEÇÃO PRINCIPAL SOBRE MIM */
+  main .about img {
+    display: none;
+  }
+
+  main .about .about_container {
+    grid-column: 1/-1;
+  }
+
+  main .about .about_container .about_text p {
+    text-align: center;
+  }
+
+  .services .about_title {
+    margin: 0;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .services .my_services {
+    padding: 40px 5px;
+  }
+
+  .services .my_services ul li {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  /* EXPERIENCIAS E EDUCAÇÃO */
+  .my_resume .generic_summary .experience_content,
+  .my_resume .generic_summary .education_content {
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+
+  .my_resume .generic_summary .experience {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .my_resume .generic_summary .education {
+    grid-column: 1/-1;
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  /* EDUCATION */
+  .courses {
+    grid-template-columns: 1fr;
+    padding: 0 20px 20px;
+    margin-top: 0;
+  }
+
+  .courses .my_skill {
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+
+  .courses .my_skill h2 {
+    justify-self: center;
+  }
+
+  .courses .funfacs {
+    margin-bottom: 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+
+  .courses .funfacs ul{
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECTS */
+  
+  .projects .project_models ul{
+    flex-direction: column;
+   text-align: center;
+  }
+
+  .projects .project_models ul li{
+    justify-content: center;
+    /* padding: 6px 20px; */
+    text-align: center;
+  }
+
+  .projects .project_storage ul {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/tooltip.css" />
+    <link rel="stylesheet" href="./src/css/font-awesome.css" />
+    <title>Portfolio - Robson Ferreira</title>
+  </head>
+  <body>
+    <header id="home">
+      <h1>Robson Guedes Ferreira</h1>
+      <nav>
+        <ul aria-label="Primary Navigation" class="primary_navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#social">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars"></i>
+      </nav>
+    </header>
+    <section
+      aria-label="Robson Professional Summary Section"
+      class="professional_resume"
+    >
+      <div>
+        <h2>Hi There! I´m Robson.</h2>
+        <h2 class="typing">
+          Front-end developer with HTML, CSS, JavaScript and React technologies.
+        </h2>
+        <p>
+          I want to be a junior front-end developer in which I am in a career
+          transition to web programming, I started studying Java for desktop,
+          but I was excited by the web pages, so I'm taking the Dev em Dobro
+          course where I'm specializing in HTML, CSS, JavaScript and React
+          technologies.
+        </p>
+        <a href="#" data-tooltip="Sorry!!, the procedure to download the CV is not available at the moment.">Dowload CV</a>
+      </div>
+      <figure>
+        <source
+          media="(max-width: 700px)"
+          srcset="./src/images/foto-celular.jpg"
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 800px)"
+          srcset="./src/images/foto-tablet.jpg"
+          type="image/jpeg"
+        />
+        <img src="./src/images/foto-desktop.jpg" alt="Image by Robson" />
+        <!-- <figcaption>Foto de Robson</figcaption> -->
+      </figure>
+    </section>
+    <main id="about">
+      <article aria-label="About me section" class="about">
+        <div class="about_me">
+          <h2>About Me</h2>
+          <p>I´m Robson</p>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <img src="./src/images/foto-desktop.jpg" alt="Image by Robson" />
+        <div class="about_container">
+          <div class="about_text">
+            <h2>I´m Robson</h2>
+            <p>
+              I want to be a junior front-end developer in which I am in a
+              career transition to web programming, I started studying Java for
+              desktop, but I was excited by the web pages, so I'm taking the Dev
+              em Dobro course where I'm specializing in HTML, CSS, JavaScript
+              and React technologies.
+            </p>
+          </div>
+
+          <div class="about_info">
+            <p><i class="fas fa-calendar"></i>Date of birth: July 1976</p>
+            <p><i class="fas fa-laptop"></i>Freelance: Available</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Address: Ananindeua, Brazil
+            </p>
+            <p><i class="fas fa-globe"></i>Spoken Langages: Brazil</p>
+            <p><i class="fas fa-flag"></i>Nationality: Brazilian</p>
+            <p><i class="fas fa-phone-volume"></i>Phone: +99 9999-9999</p>
+            <p><i class="fas fa-envelope"></i>Email: beetre@bol.com.br</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <section class="services">
+      <div class="about_title">
+        <h2>About Me</h2>
+        <p>Professional Profile - There is All About Me</p>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="my_services">
+        <ul aria-label="Secondary Navigation">
+          <li>
+            <i class="fas fa-edit"></i>
+            <h3>Web Design</h3>
+            <p>
+              The web designer designs websites, blogs, systems, web
+              applications and digital pieces such as banners and artwork for
+              social media. His work is confused with that of a web developer or
+              programmer.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-globe"></i>
+            <h3>Web Developer</h3>
+            <p>
+              Plan, build and maintain everything that runs on a web platform.
+              Also called web developer or programmer, normally, their areas of
+              activity are divided into just two: front-end and back-end.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-camera"></i>
+            <h3>Photography</h3>
+            <p>
+              Knowing photography will expand your horizons, improve the way you
+              see and perceive the world.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-layer-group"></i>
+            <h3>SEO Analyst</h3>
+            <p>
+              An SEO analyst is the person responsible for the strategy,
+              management and execution of SEO activities, marketing aimed at
+              ranking a website well in Google's organic search for certain
+              keywords.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-medal"></i>
+            <h3>Creative Design</h3>
+            <p>
+              Web Design involves work related to the layout and design of
+              online pages as well as content production, although it tends to
+              be more applied to website creation.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-palette"></i>
+            <h3>UX/UI</h3>
+            <p>
+              The focus of UI design is the creation of a friendly interface and
+              deals with the elements with which the user interacts, UX is
+              focused on the way the user experiences using a product.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="my_resume" id="resume">
+      <div class="about_title">
+        <h2>My Resume</h2>
+        <p>Experiences and training academies and courses.</p>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="generic_summary">
+        <h2 class="experience"><i class="fas fa-handshake"></i>experience</h2>
+        <div class="experience_content">
+          <div>
+            <span>2023</span>
+            <h3>HTML - HyperText Markup Language</h3>
+            <p>
+              HTML is the base component of the web. This means that it allows
+              the construction of websites and the insertion of new content,
+              such as images and videos, through hypertexts, must be well
+              analyzed to facilitate styling with CSS and positioning of
+              elements on the page.
+            </p>
+          </div>
+          <div>
+            <span>2023</span>
+            <h3>CSS - Cascading Style Sheet</h3>
+            <p>
+              CSS has the task of separating the website's content from its
+              visual presentation, changing elements such as text color, font
+              and spacing between blocks, as well as the entire aesthetic aspect
+              of a page, which is an important part of the web developer, it's
+              been great to create this portfolio to solidify knowledge.
+            </p>
+          </div>
+          <div>
+            <span>2023</span>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript is a programming language used by developers to make
+              interactive Internet pages, which is a challenge for programmers
+              It's been wonderful for me to get to know this programming
+              language.
+            </p>
+          </div>
+          <div>
+            <span>2023</span>
+            <h3>React</h3>
+            <p>
+              React, launched in 2013, is an open source JavaScript library,
+              essential for creating front-end applications. It was developed by
+              Facebook for creating reusable interface elements in a simple,
+              intuitive way and with great performance.
+            </p>
+          </div>
+          <ul>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+          </ul>
+        </div>
+        <h2 class="education"><i class="fas fa-book"></i>education</h2>
+        <div class="education_content">
+          <div>
+            <span>2010-2012</span>
+            <h3>Higher School of the Amazon - Universyte</h3>
+            <p>Computer Network Technician</p>
+          </div>
+          <div>
+            <span>2012-2014</span>
+            <h3>
+              IESAM - Institute of Higher Studies of the Amazon - Universyte
+            </h3>
+            <p>Postgraduate: Network and Telecommunications Engineering</p>
+          </div>
+          <div>
+            <span>2021</span>
+            <h3>Udemy - Geek University</h3>
+            <p>Python programming course from basics to advanced</p>
+          </div>
+          <div>
+            <span>2021</span>
+            <h3>Udemy - Geek University</h3>
+            <p>
+              Web programming course with Python and Django Framework: Essential
+            </p>
+          </div>
+          <div>
+            <span>2023</span>
+            <h3>Course - Dev em Dobro</h3>
+            <p>
+              Front-end web program with HTML, CSS, JavaScript and React
+              technologies.
+            </p>
+          </div>
+          <ul>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+            <li><i class="fas fa-circle size"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="courses">
+        <div class="my_skill">
+          <h2><i class="far fa-star"></i>my skill</h2>
+          <div class="skill_content">
+            <h3>html 5</h3>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <div class="skill_content">
+            <h3>css 3</h3>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <div class="skill_content">
+            <h3>javascript</h3>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <div class="skill_content">
+            <h3>react</h3>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="funfacs">
+          <h2><i class="fas fa-heart"></i>funfacs</h2>
+          <ul>
+            <li>
+              <i class="fas fa-mug-hot"></i>
+              <span>0000</span>
+              <p>Happy Clients</p>
+            </li>
+            <li>
+              <i class="fas fa-medal"></i>
+              <span>0001</span>
+              <p>Medal Projects</p>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              <span>0000</span>
+              <p>User Rattings</p>
+            </li>
+            <li>
+              <i class="fas fa-users"></i>
+              <span>0000</span>
+              <p>Awards Achieved</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="projects" id="projects">
+      <div class="about_title">
+        <h2>My Projects</h2>
+        <p>Experiences and training academies and courses.</p>
+        <div aria-label="Button illustrations only section">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="project_models">
+        <ul
+          class="navigation_project"
+          aria-label="Navigation between project-specific templates"
+        >
+          <li class="all">All</li>
+          <li class="website">Websites</li>
+          <li class="design">Design</li>
+          <li class="graphic">Graphic</li>
+        </ul>
+      </div>
+      <div class="project_storage">
+        <ul aria-label="Project and website navigation">
+          <li id="website">
+            <a
+              href="https://robsongeek.github.io/landing-page/
+            "
+              target="_blank"
+              ><img
+                src="./src/images/landing-page.jpg"
+                alt="Image of a web page"
+            /></a>
+          </li>
+          <li id="website">
+            <a
+              href="https://robsongeek.github.io/validar-formulario/
+            "
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./src/images/validar-formulario.jpg"
+                alt="Image of a web page for data validation"
+            /></a>
+          </li>
+          <li id="website"><img src="./src/images/animacao-baleia.gif" alt="Animation of a whale under the sea"></li>
+          <li id="website"><img src="./src/images/original.png" alt="Image of a web page"></li>
+          <li id="design"><img src="./src/images/design-web-1.jpg" alt="Image of a web page"></li>
+          <li id="design"><img src="./src/images/design-web-2.jpg" alt="Image of a web page"></li>
+          <li id="graphic"><img src="./src/images/graphic-designer.jpg" alt="Image of a web page"></li>
+          <li id="graphic"><img src="./src/images/graphic-designer-2.jpg" alt="Image of a web page"></li>
+        </ul>
+      </div>
+      <a href="#">Return to home</a>
+    </section>
+    <footer id="social">
+      <div class="about_title">
+        <h2>My social networks</h2>
+        <p>Get to know me better through my social networks.</p>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav aria-label="Social Link Navigation">
+        <ul class="footer_social">
+          <li><a href="https://www.linkedin.com/in/robson-ferreira-6b7b6848/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/robsongeek" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/robsonferreira719/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </nav>
+      <p class="year"></p>
+    </footer>
+
+    <script src="./src/js/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,909 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
+/* HEADER */
+header {
+  background-color: var(--background-color-primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: var(--text-color-secondary);
+  font-size: 3.5rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.9rem;
+}
+
+header nav ul li a {
+  color: var(--text-color-third);
+}
+
+/* animação com uma barra abaixo do menu */
+header nav ul li a::after {
+  content: "";
+  width: 0px;
+  border-bottom: 4px solid transparent;
+  /*sem o display: block; não funciona, quebra para a próxima linha */
+  display: block;
+  transition: 0.9s;
+}
+
+/* animação com uma barra abaixo do menu */
+header nav ul li a:hover::after {
+  width: 100%;
+  border-bottom: 4px solid var(--text-color-secondary);
+}
+
+/* RESUMO PROFICIONAL */
+.professional_resume {
+  animation: inicializar 0.7s forwards;
+  background-color: var(--background-color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+@keyframes inicializar {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.professional_resume div {
+  display: grid;
+  gap: 30px;
+  /* align-self: start; */
+}
+
+.professional_resume div h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color-4th);
+}
+
+.professional_resume div .typing {
+  height: 114px;
+}
+
+.professional_resume div .typing::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: cursor_blinks 0.5s infinite;
+}
+
+@keyframes cursor_blinks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.professional_resume div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--text-color-4th);
+  /* text-align: justify; */
+}
+
+.professional_resume div a {
+  padding: 15px 45px;
+  border: 2px solid var(--text-color-third);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: var(--text-color-third);
+  /* para aparecer um botão alinhamento horizontal*/
+  justify-self: start;
+}
+
+/* SEÇÃO PRINCIPAL SOBRE MIM */
+@keyframes aboutSection {
+  from {
+    transition: 0.5s;
+    transform: translate3d(60px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+main {
+  background-color: var(--background-color-secondary);
+  color: white;
+}
+
+main .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+  /* margin-top: 60px; */
+}
+
+main .about .about_me {
+  margin: 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+main .about .about_me h2 {
+  color: var(--text-color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin-top: 15px;
+  font-size: 4.5rem;
+}
+
+main .about .about_me p {
+  color: var(--text-color-5th);
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  /* position: relative; */
+}
+
+main .about .about_me div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+main .about .about_me div span {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color-secondary);
+  border-radius: 50%;
+}
+
+main .about img {
+  animation: photo_animation 0.5s ease-in-out forwards;
+  border-radius: 4px;
+  /* grid-row: 2; */
+  cursor: pointer;
+  filter: blur(0);
+}
+
+@keyframes photo_animation {
+  from {
+    transition: 0.5s;
+    transform: translate3d(-60px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+main .about img:hover {
+  transition: 0.5s ease-in-out;
+  filter: blur(1px);
+}
+
+main .about .about_container {
+  animation: about_animation 0.5s ease-in-out forwards;
+  display: grid;
+  grid-column: 2/-1;
+  grid-template-columns: 1fr 1fr;
+  color: var(--text-color-5th);
+}
+
+@keyframes about_animation {
+  from {
+    transition: 0.5s;
+    transform: translate3d(60px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+main .about .about_container .about_text {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .about .about_container .about_text h2 {
+  grid-column: 1/-1;
+  font-size: 3.5rem;
+  color: var(--text-color-third);
+}
+
+main .about .about_container .about_text h2::after {
+  background-color: var(--background-color-third);
+  height: 6px;
+  width: 60px;
+  margin: 20px 0;
+  content: "";
+  display: block;
+  border-radius: 5px;
+}
+
+main .about .about_container .about_text p {
+  font-size: 2.5rem;
+  grid-row: 2;
+  grid-column: 1/-1;
+}
+
+main .about .about_info {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+  grid-column: 1/-1;
+}
+
+main .about .about_info i {
+  color: var(--text-color-secondary);
+  display: inline-block;
+  padding-right: 15px;
+  font-size: 3rem;
+}
+
+main .about .about_info p {
+  font-size: 2rem;
+}
+
+/* SERVICES */
+.services {
+  background-color: var(--background-color-4th);
+  padding: 40px;
+  margin-top: -30px;
+}
+
+.services .about_title {
+  margin: 30px 0;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+.services .about_title h2 {
+  color: var(--text-color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin-top: 15px;
+  font-size: 4.5rem;
+}
+
+.services .about_title p {
+  font-size: 2.5rem;
+  color: var(--text-color-5th);
+}
+
+.services .about_title div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.services .about_title div span {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color-secondary);
+  border-radius: 50%;
+  gap: 10px;
+}
+
+.services .my_services {
+  padding: 40px;
+  color: var(--text-color-third);
+}
+
+.services .my_services ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .my_services ul li {
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px;
+  display: grid;
+  gap: 15px;
+  text-align: center;
+  max-width: 300px;
+  height: 300px;
+  background-color: var(--background-color-5th);
+}
+
+.services .my_services ul i {
+  color: var(--text-color-secondary);
+  font-size: 4rem;
+  margin-top: 15px;
+}
+
+.services .my_services ul li h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-color-third);
+}
+
+.services .my_services ul li p {
+  font-size: 2rem;
+  color: var(--text-color-5th);
+}
+
+.services .my_services ul li::before {
+  content: "";
+  border-radius: 6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -2px;
+  right: -2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.services .my_services ul li::after {
+  content: "";
+  border-radius: 6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.services .my_services ul li:hover::before {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.services .my_services ul li:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+}
+
+/* EXPERIENCIAS E EDUCAÇÃO */
+
+.my_resume .about_title {
+  /* margin: 30px 0; */
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+.my_resume .about_title h2 {
+  color: var(--text-color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin-top: 15px;
+  font-size: 4.5rem;
+}
+
+.my_resume .about_title p {
+  font-size: 2.5rem;
+  color: var(--text-color-5th);
+}
+
+.my_resume .about_title div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.my_resume .about_title div span {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color-secondary);
+  border-radius: 50%;
+  gap: 10px;
+}
+
+/* EDUCATION */
+.my_resume {
+  background-color: var(--background-color-primary);
+}
+.my_resume .generic_summary {
+  color: var(--text-color-primary);
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+}
+
+.my_resume .generic_summary h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: var(--text-color-secondary);
+  padding: 10px;
+  border-radius: 3px;
+  justify-self: start;
+  color: var(--text-color-4th);
+}
+
+.my_resume .generic_summary h2 i {
+  margin-right: 10px;
+}
+
+.my_resume .generic_summary i {
+  font-size: 3rem;
+}
+
+.my_resume .generic_summary .size {
+  font-size: 2rem;
+}
+
+.my_resume .generic_summary .experience {
+  margin-top: 30px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.my_resume .generic_summary .education {
+  margin-top: 30px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.my_resume .generic_summary .experience_content div {
+  position: relative;
+  display: none;
+  background-color: var(--background-color-5th);
+  padding: 30px;
+  margin-top: 25px;
+  animation: photo_animation 0.5s ease-in-out forwards;
+}
+
+.my_resume .generic_summary .experience_content div.active {
+  display: block;
+}
+
+.my_resume .generic_summary .experience_content div::before {
+  content: "";
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid var(--background-color-5th);
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.my_resume .generic_summary .experience_content div span {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.my_resume .generic_summary .experience_content div h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-4th);
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.my_resume .generic_summary .experience_content div p {
+  color: var(--text-color-5th);
+  font-size: 2rem;
+}
+
+.my_resume .generic_summary .experience_content ul li.active {
+  color: var(--text-color-6th);
+}
+
+.my_resume .generic_summary .experience_content ul {
+  color: var(--background-color-third);
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.my_resume .generic_summary .education_content div {
+  position: relative;
+  display: none;
+  background-color: var(--background-color-5th);
+  padding: 30px;
+  margin-top: 25px;
+  animation: about_animation 0.5s ease-in-out forwards;
+}
+
+.my_resume .generic_summary .education_content div.active {
+  display: block;
+}
+
+.my_resume .generic_summary .education_content div::before {
+  content: "";
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid var(--background-color-5th);
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.my_resume .generic_summary .education_content div span {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.my_resume .generic_summary .education_content div h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-4th);
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.my_resume .generic_summary .education_content div p {
+  color: var(--text-color-5th);
+  font-size: 2rem;
+}
+
+.my_resume .generic_summary .education_content ul li.active {
+  color: var(--text-color-6th);
+}
+
+.my_resume .generic_summary .education_content ul {
+  color: var(--background-color-third);
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* CURSOS E SKILLS */
+.courses {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  gap: 30px;
+  /* color: white; */
+  align-items: start;
+  justify-content: center;
+}
+
+.courses .my_skill {
+  display: grid;
+  color: var(--text-color-third);
+}
+
+.courses .my_skill h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  padding: 10px 30px;
+  background-color: var(--background-color-third);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  justify-self: start;
+}
+
+.courses .my_skill h2 i {
+  margin-right: 10px;
+}
+
+.courses .my_skill .skill_content {
+  font-size: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/2;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.courses .my_skill .skill_content h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.courses .my_skill .skill_content ul {
+  display: flex;
+}
+
+/* FUN FACTS */
+.courses .funfacs {
+  display: grid;
+  grid-row: 1;
+  color: var(--text-color-third);
+  grid-column: 3/-1;
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses .funfacs h2 {
+  /* coloca o h2 em cima */
+  grid-column: 1/-1;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  padding: 10px 30px;
+  background-color: var(--background-color-third);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  justify-self: start;
+}
+
+.courses .funfacs h2 i {
+  margin-right: 10px;
+}
+
+.courses .funfacs ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.courses .funfacs ul li {
+  background-color: var(--background-color-5th);
+  border: 3px solid var(--background-color-6th);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-self: start;
+  width: 200px;
+  height: 100px;
+}
+
+.courses .funfacs ul li i {
+  grid-row: 1/3;
+  margin: auto;
+  padding: 20px;
+  font-size: 3rem;
+  color: var(--background-color-third);
+  border-right: 2px solid var(--text-color-6th);
+}
+
+.courses .funfacs ul li span {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-color-third);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.courses .funfacs ul li p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color-5th);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  background-color: var(--background-color-4th);
+}
+
+.projects .about_title {
+  /* margin: 30px 0; */
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+.projects .about_title h2 {
+  color: var(--text-color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin-top: 15px;
+  font-size: 4.5rem;
+}
+
+.projects .about_title p {
+  font-size: 2.5rem;
+  color: var(--text-color-5th);
+}
+
+.projects .about_title div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects .about_title div span {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color-secondary);
+  border-radius: 50%;
+  gap: 10px;
+}
+
+.projects .project_models ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.projects .project_models ul li {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color-5th);
+  border: 1px solid var(--text-color-7th);
+  color: var(--text-color-5th);
+  padding: 6px 20px;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.projects .project_models ul li:hover {
+  transform: scale(1.1);
+}
+
+.projects .project_models ul li.active {
+  background-color: var(--text-color-secondary);
+  color: var(--background-color-4th);
+  font-weight: bold;
+}
+
+.projects .project_storage ul {
+  display: grid;
+  margin-top: 60px;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.projects .project_storage ul li {
+  display: none;
+  max-width: 100%;
+  height: 100%;
+}
+
+.projects .project_storage ul li.active {
+  display: block;
+  animation: animationButton 2s ease-in-out forwards;
+}
+
+@keyframes animationButton {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -90px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.projects .project_storage ul li a {
+  padding: 0;
+}
+
+.projects a {
+  background-color: var(--background-color-5th);
+  padding: 20px 40px;
+  justify-self: center;
+  color: var(--text-color-5th);
+  border: 1px solid var(--text-color-7th);
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transition: 0.5s ease-in-out;
+}
+
+.projects a:hover {
+  background-color: var(--text-color-secondary);
+  color: var(--text-color-4th);
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: var(--background-color-primary);
+  padding: 30px;
+}
+
+footer .about_title {
+  margin: 30px 0;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+footer .about_title h2 {
+  color: var(--text-color-secondary);
+  font-family: "Berkshire Swash", cursive;
+  margin-top: 15px;
+  font-size: 4.5rem;
+}
+
+footer .about_title p {
+  font-size: 2.5rem;
+  color: var(--text-color-5th);
+}
+
+footer .about_title div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .about_title div span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color-secondary);
+  border-radius: 50%;
+  gap: 10px;
+}
+
+footer nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--text-color-4th);
+}
+
+footer nav ul::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color-5th);
+  height: 5px;
+  width: 200px;
+  bottom: -30px;
+}
+
+footer nav ul li {
+  background-color: var(--background-color-7th);
+  border-radius: 50%;
+  border: 1px solid var(--text-color-7th);
+}
+
+footer nav ul li:hover {
+  background-color: var(--text-color-6th);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+footer nav ul li i {
+  padding: 30px;
+  font-size: 2.5rem;
+  color: var(--text-color-4th);
+}
+
+footer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color-third);
+  margin: 60px 0;
+}

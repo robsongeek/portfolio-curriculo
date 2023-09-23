@@ -1,0 +1,16 @@
+:root{
+    --background-color-primary: #000000;
+    --background-color-secondary: #111;
+    --background-color-third: #ff5d56;
+    --background-color-4th: #151515;
+    --background-color-5th: #222;
+    --background-color-6th: #2f2d2d;
+    --background-color-7th: #212020;
+    --text-color-primary: #000000;
+    --text-color-secondary: #DC3545;
+    --text-color-third: #FFF;
+    --text-color-4th: #f7f7f7;
+    --text-color-5th: #707070;
+    --text-color-6th: #3e3d3d;
+    --text-color-7th: #333;
+}
