@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 40px 30px;
 }
 
 header h1 {
@@ -42,7 +42,7 @@ header nav ul li a:hover::after {
   border-bottom: 4px solid var(--text-color-secondary);
 }
 
-/* RESUMO PROFICIONAL */
+/* RESUMO PROFISSIONAL */
 .professional_resume {
   animation: inicializar 0.7s forwards;
   background-color: var(--background-color-primary);
@@ -297,7 +297,6 @@ main .about .about_info p {
 }
 
 .services .about_title div span {
-  /* display: block; */
   width: 20px;
   height: 20px;
   background-color: var(--text-color-secondary);
@@ -417,7 +416,6 @@ main .about .about_info p {
 }
 
 .my_resume .about_title div span {
-  /* display: block; */
   width: 20px;
   height: 20px;
   background-color: var(--text-color-secondary);
@@ -772,6 +770,10 @@ main .about .about_info p {
   background-color: var(--text-color-secondary);
   color: var(--background-color-4th);
   font-weight: bold;
+}
+
+.projects .project_storage img {
+height: 100%;
 }
 
 .projects .project_storage ul {
