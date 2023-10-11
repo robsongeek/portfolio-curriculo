@@ -886,12 +886,12 @@ footer nav ul li {
   background-color: var(--background-color-7th);
   border-radius: 50%;
   border: 1px solid var(--text-color-7th);
+  transition: 0.5s ease-in-out;
 }
 
 footer nav ul li:hover {
   background-color: var(--text-color-6th);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
 footer nav ul li i {
