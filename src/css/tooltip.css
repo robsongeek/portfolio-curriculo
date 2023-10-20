@@ -1,3 +1,5 @@
+
+/* colocar no HTML - data-tooltip="Sorry!!, the procedure to download the CV is not available at the moment." */
 [data-tooltip] {
     position: relative;
     font-weight: bold;
