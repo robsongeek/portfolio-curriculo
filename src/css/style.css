@@ -114,6 +114,14 @@ header nav ul li a:hover::after {
   color: var(--text-color-third);
   /* para aparecer um botão alinhamento horizontal*/
   justify-self: start;
+  transition: .5s ease-in-out;
+}
+
+.professional_resume div a:hover {
+  color: var(--text-color-primary);
+  background-color: var(--text-color-third);
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 /* SEÇÃO PRINCIPAL SOBRE MIM */
