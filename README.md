@@ -1,5 +1,9 @@
 # Robson Guedes Ferreira - portfolio-template
 
+![Badges](https://img.shields.io/badge/HTML5-E34F26?logo=html5)
+![Badges](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript)
+![Badges](https://img.shields.io/badge/CSS3-1572B6?logo=css3)
+
 Vision of desktop.
 ![portfolio-template](src/design/animacao-desktop.gif)
 
@@ -17,8 +21,8 @@ Thanks for checking out my front-end coding portfolio.
 
 ### Links
 
-- GitHub Page: [=>link](https://robsongeek.github.io/portfolio-curriculo/)
-- Repository GitHub: [=>link](https://github.com/robsongeek/portfolio-curriculo)
+- [GitHub Page:](https://robsongeek.github.io/portfolio-curriculo/)
+- [Repository GitHub:](https://github.com/robsongeek/portfolio-curriculo)
 
 ### Built with
 
@@ -29,8 +33,10 @@ Thanks for checking out my front-end coding portfolio.
 
 ## Author
 
-- GitHub - [Robson Ferreira](https://github.com/robsongeek)
-- Linkedin - [Robson Ferreira](https://www.linkedin.com/in/robson-ferreira-6b7b6848/)
-- Instagram - [Robson Ferreira](https://www.instagram.com/robsonferreira719/)
+- GitHub - [GitHub-Robson Ferreira](https://github.com/robsongeek)
+- Website - [My blog - Discover and share it](https://digitalcomputerprogramming.com/)
+- Linkedin - [Linkedin](https://www.linkedin.com/in/robsonferreira-6b7b6848/)
+- Instagram - [Instagram](https://www.instagram.com/robsonferreira719/)
+- Curriculo - [Robson Ferreira](https://robsongeek.github.io/portfolio-curriculo/)
 
 **Have fun building!** 🚀
