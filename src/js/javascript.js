@@ -125,14 +125,16 @@ function slideShowProjects() {
     if (button == "website") {
       list[0].classList.add("active");
       list[1].classList.add("active");
+      
+    }
+    if (button == "javascript") {
       list[2].classList.add("active");
       list[3].classList.add("active");
-    }
-    if (button == "design") {
       list[4].classList.add("active");
-      list[5].classList.add("active");
+      
     }
-    if (button == "graphic") {
+    if (button == "java") {
+      list[5].classList.add("active");
       list[6].classList.add("active");
       list[7].classList.add("active");
     }
@@ -157,11 +159,11 @@ function slideShowProjects() {
       if (currentButton.classList.contains("website")) {
         showList(listAll, "website");
       }
-      if (currentButton.classList.contains("design")) {
-        showList(listAll, "design");
+      if (currentButton.classList.contains("javascript")) {
+        showList(listAll, "javascript");
       }
-      if (currentButton.classList.contains("graphic")) {
-        showList(listAll, "graphic");
+      if (currentButton.classList.contains("java")) {
+        showList(listAll, "java");
       }
     });
   });
